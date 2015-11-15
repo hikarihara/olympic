@@ -1,0 +1,81 @@
+.animation(@name, @duration, @function, @delay, @count, @direction, @mode){
+-webkit-animation: @name @duration @function @delay @count @direction @mode;
+-moz-animation: @name @duration @function @delay @count @direction @mode;
+-ms-animation: @name @duration @function @delay @count @direction @mode;
+-o-animation: @name @duration @function @delay @count @direction @mode;
+animation: @name @duration @function @delay @count @direction @mode;
+}
+
+/* Config */
+/*************************************************/
+@square: 5px;        // 紙吹雪の大きさ
+@fallBottom: 560px;   // どれくらい下まで落ちるか
+@fallSpeed: 5s;       // 落ちるスピード
+
+html, body{
+width: 960px;
+height: 560px;
+position: relative;
+}
+
+.kami{
+position: absolute;
+top: -50px;
+width: @square;
+height: @square;
+opacity: 0.8;
+.animation(fall, @fallSpeed, linear, 0s, 1, normal, backwards);
+}
+
+/* Animations */
+/*************************************************/
+
+// chrome
+@-webkit-keyframes fall {
+from {
+-webkit-transform: translateX(0) translateY(0) skew(30deg);
+}
+12.5%{
+-webkit-transform: translateX(-50px) translateY(@fallBottom * 0.125) skew(0deg);
+}
+37.5%{
+-webkit-transform: translateX(50px) translateY(@fallBottom * 0.375) skew(-30deg);
+}
+50%{
+-webkit-transform: translateX(0) translateY(@fallBottom * 0.5) skew(30deg);
+}
+62.5%{
+-webkit-transform: translateX(-50px) translateY(@fallBottom * 0.625) skew(0deg);
+}
+87.5%{
+-webkit-transform: translateX(50px) translateY(@fallBottom * 0.875) skew(-30deg);
+}
+to{
+-webkit-transform: translateX(0) translateY(@fallBottom) skew(30deg);
+}
+}
+
+// normal
+@keyframes fall {
+from {
+transform: translateX(0) translateY(0) skew(30deg);
+}
+12.5%{
+transform: translateX(-50px) translateY(@fallBottom * 0.125) skew(0deg);
+}
+37.5%{
+transform: translateX(50px) translateY(@fallBottom * 0.375) skew(-30deg);
+}
+50%{
+transform: translateX(0) translateY(@fallBottom * 0.5) skew(30deg);
+}
+62.5%{
+transform: translateX(-50px) translateY(@fallBottom * 0.625) skew(0deg);
+}
+87.5%{
+transform: translateX(50px) translateY(@fallBottom * 0.875) skew(-30deg);
+}
+to{
+transform: translateX(0) translateY(@fallBottom) skew(30deg);
+}
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        <title>1964 / 2020</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    </head>
+
+
+    <body scroll="no" style="background-color: #CCECFB;">
+        
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="event.js"></script>
+
+        <img src="img/2020map.png" class="map">
+
+        <div style="position: relative;  width: 960px hight: 560px;">
+            <img src="img/title.png"  style="position: absolute; top: 20px; left: 30px; width: 270px;">
+            <a href="1964.html"><img src="img/1964botton.png" style="position: absolute; top: 30px; left: 318px; width: 60px; z-index: 30;"></a>
+            <a href="2020.html"><img src="img/2020botton.png" style="position: absolute; top: 30px; left: 390px; width: 60px; z-index: 30;"></a>
+        
+            <span onClick="document.all.item('moji1').style.visibility='visible'">
+                <div style="position: absolute; top: 431px; left: 509px; width: 10px; " class="botton"></div>
+            </span>
+
+            <div ID="moji1" style="visibility:hidden; z-index: 50;" class="player2020">
+               
+               
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Yoshinobu_Miyake_1964.jpg">
+                <div>
+                    <h2>三宅義信</h2>
+                    <p> 宮城県柴田郡村田町出身<br>
+                        競技	ウェイトリフティング<br>
+                        種目	男子フェザー級 - バンタム級</p>
+                        
+                </div>
+                <span onClick="document.all.item('moji1').style.visibility='hidden'">
+                    <p class="hidden-botton"><i class="fa fa-check-circle-o fa-2x fa-green"></i></p>
+                </span>
+            </div>
+
+
+
+        </div>   
+    </body>
+
+</html>
