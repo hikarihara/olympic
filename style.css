@@ -100,6 +100,15 @@ a{
 .player p{
     font-size: 12px;
 }
+.hidden{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 850px;
+    height: 500px;
+    
+
+}
 
 .hidden-botton{
     text-align: right;
@@ -107,7 +116,7 @@ a{
     
 }
 
-.fa-green:before
+.fa-gry:before
 {
     color: #484A52 ;
 }
