@@ -54,8 +54,8 @@ a{
     4
     -webkit-border-radius: 10px;
 
-    transition: 0.5s;
-    background: #2D68AD;
+    transition: 0.2s;
+    background: #FCEE21;
     
     z-index: 20;
 }
