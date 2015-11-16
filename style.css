@@ -12,12 +12,7 @@ body{
 
 
 
-h1{
-    margin: 0;
-    font-size: 20px;
 
-    float: left;
-}
 
 .header{
     margin: auto;
@@ -118,11 +113,7 @@ a{
 
 }
 
-.hidden-botton{
-    text-align: right;
-    padding: 0 10px 0px 0px;   
-    
-}
+
 
 .fa-gry:before
 {
@@ -150,8 +141,29 @@ a{
     margin: 30px; 
 
 }
+.player2020 h1{
+    font-size: 10pt;
+    opacity: 0.8;
+
+}
+.player2020 h2{
+    margin: 0  -50px 0 0;
+    font-size: 20pt;
+}
+.player2020 h3{
+    margin: 0  -50px 0 0;
+    font-size: 12pt;
+    opacity: 0.8;
+
+}
+.hidden-botton{
+    text-align: right;
+    padding: 0 10px 0px 0px;   
+
+}
 .player2020 p{
-    font-size: 14px;
+    padding: 0 10px 0px 0px;
+    font-size: 12px;
 
 }
 .player2020 img{
@@ -167,6 +179,7 @@ a{
     float: left;
 
 }
+
 
 
 /*紙吹雪*/
