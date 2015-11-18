@@ -40,24 +40,28 @@ a{
 }
 
 .botton{
+    background: url(img/btn1964-1.png) no-repeat;
+    background-size:15px 18px;
     
-    width: 10px;
-    height: 10px;
-    border-radius: 10px;
-    3
-    -moz-border-radius: 10px;
-    4
-    -webkit-border-radius: 10px;
+    z-index: 20;
 
-    transition: 0.2s;
-    background: #FCEE21;
+}
+
+.botton img{
+    
+    transition: 0.5s;
+
     
     z-index: 20;
 }
 
 
-.botton:hover{
-    background: #fff;
+.botton img:hover{
+    visibility: hidden;
+    
+
+
+    
 
 }
     
