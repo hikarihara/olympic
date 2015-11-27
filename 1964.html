@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
 
-    <body scroll="no" style="background-image: url(img/background1964.png);">
+    <body scroll="no">
       
        
 
@@ -16,7 +16,7 @@
 
      <div style="position: relative;  width: 960px hight: 560px;">
         
-         <img src="img/title.png"  style="position: absolute; top: 20px; left: 30px; width: 270px;">
+         <div style="backgroud-color: rgba(255,255,255,0.8);"><img src="img/title2.png"  style="position: absolute; top: 20px; left: 30px; width: 270px;"></div>
          <!--<a href="1964.html"><img src="img/1964botton.png" style="position: absolute; top: 30px; left: 318px; width: 60px; z-index: 30;"></a>-->
          <a href="1964.html"><img src="img/1964button_2.png" style="position: absolute; top: 24px; left: 318px; width: 70px; z-index: 30;"></a>
          <a href="2020.html"><img src="img/2020botton.png" style="position: absolute; top: 30px; left: 400px; width: 60px; z-index: 30;"></a>
@@ -984,6 +984,19 @@
                  <p class="hidden"></p>
              </span>
          </div>
+         
+         <script type="text/javascript">
+             (function() {
+                 var bg = ["bg_img/ehime_.jpg", "bg_img/kaikaishiki_.jpg", "bg_img/ryujo_.jpg", "bg_img/run_.jpg", "bg_img/valley_.jpg"];
+                 console.log(bg);
+                 var r = Math.floor(Math.random() * bg.length);
+                 console.log(r);
+                 document.body.style.backgroundImage = "url(" + bg[r] + ")";
+//                 document.backgroundImage.width = 100%;
+//                 document.body.style.backgroundImage.height = 
+                     
+             })()
+         </script>
         
 
          <a href="source.html" style="position: absolute; top: 550px; right: 0px; left: 0px; margin: auto; font-size: 10px; text-align: center;
