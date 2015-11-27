@@ -5,6 +5,11 @@
         <meta charset="utf-8">
         <title>1964 / 2020</title>
         <link rel="stylesheet" href="style.css">
+        <script src="/js/jquery-1.10.0.min.js"></script>
+        <script src="/js/iframe.js"></script>
+        <script src="js/jquery.js"></script>
+
+
     </head>
 
     <body scroll="no">
@@ -19,7 +24,12 @@
          <div style="backgroud-color: rgba(255,255,255,0.8);"><img src="img/title2.png"  style="position: absolute; top: 20px; left: 30px; width: 270px;"></div>
          <!--<a href="1964.html"><img src="img/1964botton.png" style="position: absolute; top: 30px; left: 318px; width: 60px; z-index: 30;"></a>-->
          <a href="1964.html"><img src="img/1964button_2.png" style="position: absolute; top: 24px; left: 318px; width: 70px; z-index: 30;"></a>
-         <a href="2020.html"><img src="img/2020botton.png" style="position: absolute; top: 30px; left: 400px; width: 60px; z-index: 30;"></a>
+         <span onClick="document.all.item('line').style.visibility='visible'">aaa
+             <input type="image" src="img/2020botton.png"  id="jump" style="position: absolute; top: 30px; left: 400px; width: 60px; z-index: 30;"></span>
+
+         <div ID="line" style="visibility:hidden;">
+             <img src="img/line-w.gif" style="position: absolute; top : -10px; width: 960px; margin: 0 auto;  z-index: 50;">
+         </div>
            
 <!--
          <span onClick="document.all.item('line').style.visibility='visible'">
@@ -27,6 +37,7 @@
              
          </span>          
            
+<div ID="line" style="visibility:hidden;">
 
          <div ID="line" style="background-image: url(img/line.gif); z-index:50px;"></div>
 -->
@@ -987,7 +998,7 @@
          
          <script type="text/javascript">
              (function() {
-                 var bg = ["bg_img/ehime_.jpg", "bg_img/kaikaishiki_.jpg", "bg_img/ryujo_.jpg", "bg_img/run_.jpg", "bg_img/valley_.jpg"];
+                 var bg = ["bg_img/ehime_.jpg", "bg_img/kaikaishiki_.jpg", "bg_img/nyujo_.jpg", "bg_img/run_.jpg", "bg_img/valley_.jpg"];
                  console.log(bg);
                  var r = Math.floor(Math.random() * bg.length);
                  console.log(r);

@@ -6,6 +6,15 @@
         <title>1964 / 2020</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/fade.js"></script>
+        <script src="js/jquery.hoverpulse.js"></script>
+        
+        <script type="text/javascript">//<![CDATA[
+            $(document).ready(function(){
+                $("#pin img").hoverpulse();
+            });
+            //]]></script>
     </head>
 
 
@@ -203,7 +212,7 @@
             </div>
             
             <span onClick="document.all.item('moji7').style.visibility='visible'">
-                <img src="img/btn2020-1.png" style="position: absolute; top: 378px; left: 595px; width: 15px; " class="botton">
+                <div id="pin"><img src="img/btn2020-1.png"  style="position: absolute; top: 378px; left: 595px; width: 15px; " class="botton"></div>
             </span>
             <div ID="moji7" style="visibility:hidden; z-index: 50;" class="player2020">
                 <img src="">
@@ -229,7 +238,7 @@
 
                 </div>
                 <span onClick="document.all.item('moji7').style.visibility='hidden'">
-                    <p class="hidden-botton">></p>
+                    <p class="hidden-botton"><i class="fa fa-check-circle-o fa-2x fa-gry"></i></p>
                 </span>
             </div>
             
@@ -425,7 +434,7 @@
                         神港学園神港高等学校 在学中<br>
                         2014年 グランドスラム(東京) 金メダル、世界ジュニア銀メダル、世界ジュニア団体金メダル、ユースオリンピック金メダル。
                     </p>
-                    <a href="http://twitter.com/intent/tweet?text=阿部一二三！&amp;"
+                    <a href="http://twitter.com/intent/tweet?text=阿部一二三選手頑張れ！&amp;"
                        onClick="window.open(encodeURI(decodeURI(this.href)),
                                 'tweetwindow',
                                 'width=550, height=450, personalbar=0, toolbar=0, scrollbars=1, resizable=1'
