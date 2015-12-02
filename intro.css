@@ -24,3 +24,18 @@ body{
 #slideshow IMG.last-active {
     z-index:9;
 }
+
+.skip{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    z-index: 30;
+}
+
+.skip a{
+    font-size: 14px;
+
+    text-decoration: none;
+    color: #45413F;    
+
+}
