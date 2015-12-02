@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        <title>1964 / 2020</title>
+        <link rel="stylesheet" href="intro.css">
+        <script src="js/jquery-1.10.0.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/fade.js"></script>
+        <script type= text/jscript>
+        function slideSwitch() {
+    var $active = $('#slideshow IMG.active');
+    var $next = $active.next();
+
+    $active.addClass('last-active');
+
+    $next.css({opacity: 0.0})
+        .addClass('active')
+        .animate({opacity: 1.0}, 1000, function() {
+            $active.removeClass('active last-active');
+        });
+}
+
+$(function() {
+    setInterval( "slideSwitch()", 3500 );
+});
+        </script>
+
+
+    </head>
+
+    <body scroll="no" width="100%">
+        <div id="slideshow">
+            <img src="img/slide1.jpg" alt="" class="active" />
+            <img src="img/slide2.jpg" alt="" />
+            <img src="img/slide3.jpg" alt="" />
+            <img src="img/slide4.jpg" alt="" />
+            <img src="img/slide5.jpg" alt="" />
+            <a href="1964.html"><img src="img/slide6.jpg" alt="" /></a>
+            <a href="1964.html"><img src="img/slide7.jpg" alt="" /></a>
+            
+        </div>
+        
+    </body>
+
+</html>
