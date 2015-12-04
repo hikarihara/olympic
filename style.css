@@ -66,6 +66,7 @@ a{
 
 .botton{
     z-index: 20;
+    transition: 0.5s;
 
 }
 
@@ -82,24 +83,13 @@ a{
     width: 15px;
     height: 18px;
     
-    transition: 0.5s;
+    
 
     
     z-index: 20;
 }
 
 
-.botton img:hover{
-    visibility: hidden;
-    
-
-
-    
-
-
-}
-
-    
 
 .player{
     position: absolute;
